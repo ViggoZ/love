@@ -1,0 +1,379 @@
+body,a,img,p,i,em,span,p,ul,li,input{margin:0 auto;padding:0;border:0; outline:medium;}
+ul,li{list-style: none;}
+
+html,body,.bodyBox,.swiper-container,.First-screen,.Second-screen-0,.Second-screen,.Third-screen,.Fourth-screen,.Fifth-screen,.Sixth-screen,.Seventh-screen,.Eighth-screen{
+  width: 100%;
+  height:100%;
+  display: block;
+  overflow: hidden;
+  background: #0866E8 ;
+  border:0;
+  pointer-events:auto !important;
+  -webkit-touch-callout:default;
+}
+img{ pointer-events:auto !important; -webkit-touch-callout:default;}
+a{
+  text-decoration: none;
+}
+body{
+   position:relative;
+}
+.cf{zoom:1;}
+.cf:after{content:''; display:block; height:0; clear:both;}
+.bodyBox .Fourth-screen{
+  background: linear-gradient(to bottom,#293e5d 0%, #293e5d 24%,#055adb 24.1%,#055adb 100%);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 11;
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.topACtive{
+display:flex !important
+}
+.bodyBox .Fourth-screen .Fourth-screen-con{
+    background: #2E7FEE;
+    box-shadow: 0 0.3rem 0.7rem 0 rgba(1,79,206,0.62);
+    width:5.8rem;
+    height:8.76rem;
+    margin:0 auto;
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .title{
+  font-family: PingFangSC-Medium;
+  font-size: 0.48rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.5rem;
+  padding:0.75rem 0 0.32rem 0;
+  margin: 0 auto;
+  width:5.45rem;
+  height:0.56rem;
+
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .desc{
+  font-family: PingFangSC-Light;
+  font-size: 0.3rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.5rem;
+  width:4.48rem;
+  height:0.59rem;
+   -webkit-font-smoothing: antialiased;
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .name, .phone , .mailbox{
+  background: #0866E8;
+  width:4.7rem;
+  height:0.9rem;
+  font-family: PingFangSC-Light;
+  font-size: 0.24rem;
+  color:#9EC7FF ;
+  line-height: 0.9rem;
+  padding:0 0 0 0.26rem;
+}
+.name{
+  margin:0.54rem auto 0 auto ;
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .name input,.phone input{
+  height:0.7rem;
+  width:3rem;
+  background: #0866E8;
+  background: transparent;
+  color:#fff ;
+  font-size: 0.24rem;
+
+  /*line-height: 0.7rem;*/
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .mailbox span{
+  float: left;
+  /*line-height: 0.7rem;*/
+}
+.bodyBox .Fourth-screen .Fourth-screen-con .mailbox input{
+  height:0.7rem;
+  width:1.85rem;
+  background: #0866E8;
+  background: transparent;
+  color:#FFFFFF ;
+  font-size: 0.24rem;
+  float: left;
+  margin:0.12rem 0 0 0;
+  /*line-height: 0.7rem;*/
+}
+
+.bodyBox .Fourth-screen .Fourth-screen-con .mailbox img{
+  width:1.26rem;
+  height:0.58rem;
+  background: #fff;
+  display: block;
+  float: left;
+  margin:0.15rem 0 0 0;
+}
+
+.bodyBox .Fourth-screen .Fourth-screen-con .phone,.mailbox{
+  position: relative;
+  margin:0.5rem auto 0 auto;
+}
+.bodyBox .Fourth-screen .Fourth-screen-btn{
+  background: #FFD84E;
+  width:5.8rem;
+  height:0.8rem;
+  line-height: 0.85rem;
+  margin:0.6rem auto 0 auto;
+  font-family: PingFangSC-Medium;
+  font-size: 0.36rem;
+  color: #0866E8;
+  text-align: center;
+}
+
+
+.Fourth-screen-con input::-webkit-input-placeholder{ 
+  color:#cccccc;
+  border:0; 
+  outline:medium;
+} 
+.Fourth-screen-con #upload_phoneNum{
+  width: 2rem;
+}
+.phone-get-code{
+  position: absolute;
+  top: .1rem;
+  right: 0.1rem;
+  color: #fff;
+  height: .7rem;
+  line-height: .7rem;
+  font-size: .24remrem;
+  width: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+
+}
+.dir-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 99;
+  display: none;
+}
+.dir-mask.active{
+  display: block;
+}
+.dir-box{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  padding: 5% 0;
+  margin-top: -40%;
+  background-color: #4580e6;
+}
+.dir-close{
+  position: absolute;
+  top: .1rem;
+  right: .1rem;
+  text-align: center;
+  font-size: .6rem;
+  color: #fff;
+  width: .6rem;
+  height: .6rem;
+  line-height: .5rem;
+}
+.dir-title{
+  text-align: center;
+  padding-top: .2rem;
+  font-size: .36rem;
+  color: #fff;
+}
+.dir-list{
+  margin-top: .3rem;
+}
+.dir-list li{
+  float: left;
+  width: 25%;
+  margin: .2rem 0 0 5%;
+  font-size: .2rem;
+  color: #fff;
+  text-align: center;
+  line-height: .6rem;
+  height: .6rem;
+  overflow: hidden;
+  background-color: #2869df;
+  border: solid 2px #2869df;
+}
+.dir-list li.active{
+  color: #fbd66b;
+  border-color: #fbd66b;
+}
+.dir-submit{
+  width: 90%;
+  text-align: center;
+  margin:.5rem 5% 0;
+  font-size: .32rem;
+  line-height: .7rem;
+  background-color: #fbd66b;
+  color: #1873e6;
+}
+.direction-view{
+  width: 2.6rem;
+  height: 0.9rem;
+  line-height: .9rem;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+.bodyBox .Sixth-screen{
+  
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 13;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+   background: linear-gradient(to bottom,#293e5d 0%, #293e5d 24%,#055adb 24.1%,#055adb 100%);
+}
+.bodyBox .Sixth-screen #myCanvas{
+    background: #2E7FEE;
+    box-shadow: 0 0.3rem 0.7rem 0 rgba(1,79,206,0.62);
+    width:5.8rem;
+    height:8.96rem;
+    margin:0 0 0 0.85rem;
+     position: fixed;
+    left:-111rem;
+    top:0;
+}
+.bodyBox .Sixth-screen .canvas_img{
+    width:5.8rem;
+    height:8.96rem;
+    box-shadow: 0 0.3rem 0.7rem 0 rgba(1,79,206,0.62);
+    background: #2E7FEE;
+    margin:0 0 0 0.85rem;
+  }
+
+.bodyBox .Sixth-screen .btnImg{
+  width:5.8rem;
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 0.2rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 0.55rem;
+  margin:0 auto;
+  height:0.52rem;
+
+}
+.bodyBox .Sixth-screen .Sixth-screen-btn{
+  background: #FFD84E;
+  width:5.8rem;
+  height:0.85rem;
+  line-height: 0.85rem;
+  margin:0 auto 0 auto;
+  font-family: PingFangSC-Medium;
+  font-size: 0.36rem;
+  color: #0866E8;
+  text-align: center;
+
+
+}
+.Sixth-screen-bottom{
+  width:100%;
+  height:0.4rem;
+  padding:0 0 0.2rem 0;
+  text-align: center;
+  line-height: 0.4rem;
+}
+.mover{
+  font-family: PingFangSC-Light;
+  font-size: 0.24rem;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  display: inline-block;
+}
+.mover_url1{
+  font-family: PingFangSC-Light;
+  font-size: 0.24rem;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  display: inline-block;
+  background: rgba(250,250,250,0.3);
+  border-radius: 1rem;
+  padding:0 0.13rem;
+}
+.mover_url1 img,.mover_url2 img{
+  width:0.13rem;
+  height:0.18rem;
+}
+.mover_url2{
+  font-family: PingFangSC-Light;
+  font-size: 0.24rem;
+  color: #FFFFFF;
+  line-height: 0.5rem;
+  display: inline-block;
+  
+  background: rgba(250,250,250,0.3);
+  border-radius: 1rem;
+  padding:0 0.13rem;
+}
+.bodyBox .Seventh-screen{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 14;
+  overflow: hidden;
+  opacity: 0.7;
+  background: #000000;
+  display: none;
+}
+.bodyBox .Seventh-screen .prompt-box{
+  position: absolute;
+  top:0.5rem;
+  right:0.6rem;
+  width:4.52rem;
+  height:1.65rem;
+  opacity: 1 !important;
+  font-family: PingFangSC-Medium;
+  font-size: 0.26rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.85rem;
+  -webkit-font-smoothing: antialiased;
+  
+}
+.bodyBox .Seventh-screen .prompt-box .prompt-boxBg{
+    width:4.52rem;
+    height:1.65rem;
+  }
+
+ .bodyBox .Seventh-screen .prompt-box p{
+    position: absolute;
+    top:0.4rem;
+    left:0;
+    width:4.52rem;
+    line-height: 0.93rem;
+    height:0.95rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

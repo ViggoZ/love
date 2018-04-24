@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>蚂蚁公益设计</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="UTF-8">  
+    <meta name="description" content="怎样的设计才是更好的设计？加入蚂蚁公益设计，让灵感为关爱而生！">
+    <meta name="keywords" content="设计，为每一个人；设计，让人人都受益">
+    <link rel="stylesheet" type="text/css" href="css/detailcss.css">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="js/jquery.min.js.html"></script>
+    <script src="js/share.js"></script>
+    <script>
+        document.documentElement.style.fontSize = ( innerWidth*100/750 ) + 'px';//设计尺寸750 根元素为100px
+    </script>
+</head>
+
+<body>
+    <div id="lw-share-data" style="display:none">
+    <div class="lws-title">怎样的设计才是更好的设计？加入蚂蚁公益设计，让灵感为关爱而生！</div>
+    <div class="lws-description">设计，为每一个人；设计，让人人都受益</div>
+    <div class="lws-images">
+      <img src="https://gw.alicdn.com/tfs/TB1MqVMnTtYBeNjy1XdXXXXyVXa-300-300.png" /> </div>
+    <div class="lws-link">http://love.alibabaued.com</div>
+  </div>
+<div class="wb-detail-bx">
+    <!-- m-nav -->
+    <div class="detail-m-nav">
+        <a id="J_btn" data-href="message.html">认领心愿</a>
+        <span>我们将向认领心愿的设计师发送正式设计邀约</span>
+    </div>
+    <p class="detail-logo"><img src="https://img.alicdn.com/tfs/TB1rOstmL9TBuNjy1zbXXXpepXa-535-170.png" width="100%" /></p>
+    <div class="detail-ban">
+        <img class="detail-banimg" src="https://img.alicdn.com/tfs/TB14AoHmL9TBuNjy0FcXXbeiFXa-1920-913.jpg" width="100%">
+        <!-- m-ban -->
+        <img class="detail-m-banimg" src="https://gw.alicdn.com/tfs/TB1b3NBm1uSBuNjy1XcXXcYjFXa-750-420.jpg" width="100%">
+        <p>
+            <span></span>
+            <b>让每个老年人</br>都能收获关爱、安度晚年</b>
+        </p>
+    </div>
+    <div class="detail-cont">
+        <p class="detail-txt">可以是空巢老人的关爱包设计</br>满足他们日常便捷所需，传递温暖</p>
+        <p class="detail-txt">可以是抗战老兵的传播设计</br>让他们接受社会的致敬和认可</p>
+        <p class="detail-txt">······</p>
+        <p class="detail-txt"><b style="color:#747474;">好的设计方案将在具体项目中落地</br>我们会为参与其中的设计师：</br></b>1. 颁发权威公益证书</br>2. 申请国际设计奖项</br>3. 发起阶段性公益表彰</br></p>
+    </div>
+    <div class="detail-code">
+        <p>
+            <img src="https://img.alicdn.com/tfs/TB1WPbhm1GSBuNjSspbXXciipXa-280-280.png" />
+            <span>扫二维码，认领心愿</span>
+        </p>
+        <em>我们将向认领心愿的设计师发送正式设计邀约</em>
+    </div>
+    <div class="detail-foot">联系我们：<a href="mailto:unsubscription_edm@yixian.gyx@antfin.com">yixian.gyx@antfin.com</a><i>|</i>Copyright © 2018 蚂蚁公益设计. All Rights Reserved.</div>
+</div>
+
+<script type="text/javascript">
+    function url(e) {
+    var e = e.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var a = '[\\?&]' + e + '=([^&#]*)',
+        o = new RegExp(a),
+        s = o.exec(window.location.search);
+    return null == s ? '' : s[1].replace(/\+/g, ' ');
+    }
+    var _number = url('mask');
+    var _numData = url('number');
+    var id = document.getElementById('J_btn');
+    var href = id.dataset.href;
+    id.href = href + '?mask=' + _number + '&number=' + _numData;
+</script>
+</body>
+</html>
